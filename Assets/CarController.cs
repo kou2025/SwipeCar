@@ -26,7 +26,7 @@ public class CarController : MonoBehaviour
 
             this.speed=swipeLength/500.0f;
         }
-        transform.Translate(this.speed,0,0);
+        transform.Translate(this.speed,0,0,Space.World); //デフォはserf
         this.speed*=0.98f;
         
     }
